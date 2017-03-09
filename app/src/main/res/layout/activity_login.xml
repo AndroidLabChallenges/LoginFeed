@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ajasuja.codepath.loginfeed.LoginActivity">
+    tools:context="com.ajasuja.codepath.loginfeed.LoginActivity"
+    android:background="@drawable/background_image">
 
     <EditText
         android:layout_width="wrap_content"
@@ -25,11 +26,13 @@
         android:layout_alignEnd="@+id/editTextUserName"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
         android:layout_marginStart="39dp"
         android:layout_marginTop="87dp"
         android:id="@+id/editTextUserName"
@@ -44,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:id="@+id/buttonLogIn"
+        android:onClick="onLogIn"
         android:layout_below="@+id/editTextPassword"
         android:layout_alignLeft="@+id/editTextPassword"
         android:layout_alignStart="@+id/editTextPassword"
